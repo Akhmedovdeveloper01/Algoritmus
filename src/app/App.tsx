@@ -84,7 +84,7 @@ export default function App() {
                 Portfolio
               </a>
               <a href="#pricing" className="text-slate-300 hover:text-cyan-400 transition-colors">
-                Narxlar
+                Tariflar
               </a>
               <a href="#contact" className="text-slate-300 hover:text-cyan-400 transition-colors">
                 Aloqa
@@ -134,7 +134,7 @@ export default function App() {
                 className="block text-slate-300 hover:text-cyan-400 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Narxlar
+                Tariflar
               </a>
               <a
                 href="#contact"
@@ -514,7 +514,7 @@ export default function App() {
       <section id="pricing" className="py-20 px-4 sm:px-6 lg:px-8 relative">
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeInUp} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Narxlar</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Tariflar</h2>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Har bir biznes uchun mos keluvchi paket tanlang
             </p>
@@ -583,8 +583,8 @@ export default function App() {
                 key={index}
                 variants={fadeInUp}
                 className={`relative bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm p-8 rounded-2xl border ${plan.popular
-                    ? 'border-purple-500/50 shadow-2xl shadow-purple-500/20 scale-105'
-                    : 'border-slate-700/50'
+                  ? 'border-purple-500/50 shadow-2xl shadow-purple-500/20 scale-105'
+                  : 'border-slate-700/50'
                   } transition-all hover:shadow-xl hover:-translate-y-1`}
               >
                 {plan.popular && (
@@ -595,8 +595,8 @@ export default function App() {
                 <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
                 <p className="text-slate-400 text-sm mb-6">{plan.description}</p>
                 <div className="mb-6">
-                  <span className="text-3xl font-bold text-white">{plan.price}</span>
-                  <span className="text-slate-400 ml-2">so'm</span>
+                  {/* <span className="text-3xl font-bold text-white">{plan.price}</span> */}
+                  {/* <span className="text-slate-400 ml-2">so'm</span> */}
                 </div>
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, featureIndex) => (
@@ -613,8 +613,8 @@ export default function App() {
                 <a
                   href="#contact"
                   className={`block text-center py-3 px-6 rounded-xl font-semibold transition-all ${plan.popular
-                      ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:shadow-lg hover:shadow-purple-500/50'
-                      : 'bg-slate-700/50 text-white hover:bg-slate-700'
+                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:shadow-lg hover:shadow-purple-500/50'
+                    : 'bg-slate-700/50 text-white hover:bg-slate-700'
                     }`}
                 >
                   Tanlash
@@ -842,7 +842,7 @@ export default function App() {
                 </li>
                 <li>
                   <a href="#pricing" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                    Narxlar
+                    Tariflar
                   </a>
                 </li>
               </ul>
