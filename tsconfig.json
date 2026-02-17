@@ -1,0 +1,10 @@
+{
+    "include": ["src/**/*", "src/**/*.css", "src/**/*.d.ts", "vite.config.*"],
+    "compilerOptions": {
+        "types": ["vite/client", "node"],
+        "moduleResolution": "bundler",
+        "noUncheckedSideEffectImports": false,
+        "jsx": "react-jsx",
+        "module": "ESNext"
+    }
+}
